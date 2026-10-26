@@ -33,3 +33,14 @@ name = "John"
 age = 25
 sentence = "My name is {} and I am {} years old.".format(name, age)
 print(sentence)
+#index based formatting
+sentence = "My name is {0} and I am {1} years old. {0} is a good name.".format(name, age)
+print(sentence)
+#value based formatting
+sentence = "My name is {name} and I am {age} years old.".format(name=name, age=age)
+print(sentence)
+
+
+#f-strings - literal string interpolation
+sentence = f"My name is {name} and I am {age} years old."
+print(sentence)
